@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2023-09-21 17:45:04 by Eclipse SUMO netconvert Version 1.18.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <type-files value="${SUMO_HOME}/data/typemap/osmNetconvert.typ.xml,${SUMO_HOME}/data/typemap/osmNetconvertUrbanDe.typ.xml,${SUMO_HOME}/data/typemap/osmNetconvertPedestrians.typ.xml,${SUMO_HOME}/data/typemap/osmNetconvertAerialway.typ.xml"/>
+        <osm-files value="osm_bbox.osm.xml.gz"/>
+    </input>
+
+    <output>
+        <output-file value="osm.net.xml.gz"/>
+        <output.street-names value="true"/>
+        <output.original-names value="true"/>
+        <ptstop-output value="osm_stops.add.xml"/>
+        <ptline-output value="osm_ptlines.xml"/>
+    </output>
+
+    <projection>
+        <proj.utm value="true"/>
+    </projection>
+
+    <processing>
+        <geometry.remove value="true"/>
+        <roundabouts.guess value="true"/>
+    </processing>
+
+    <tls_building>
+        <tls.discard-simple value="true"/>
+        <tls.join value="true"/>
+        <tls.guess-signals value="true"/>
+        <tls.default-type value="actuated"/>
+    </tls_building>
+
+    <ramp_guessing>
+        <ramps.guess value="true"/>
+    </ramp_guessing>
+
+    <junctions>
+        <junctions.join value="true"/>
+        <junctions.corner-detail value="5"/>
+    </junctions>
+
+    <pedestrian>
+        <crossings.guess value="true"/>
+    </pedestrian>
+
+    <railway>
+        <railway.topology.repair value="true"/>
+    </railway>
+
+    <formats>
+        <osm.sidewalks value="true"/>
+    </formats>
+
+</configuration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <busStop id="2749629218" name="CAISM" lane="77881557#4_0" startPos="0.00" endPos="15.00" friendlyPos="true">
+        <access lane="-410036319#5_0" pos="0.00" length="55.58" friendlyPos="1"/>
+        <access lane="-970796649_0" pos="57.18" length="0.42" friendlyPos="1"/>
+        <access lane="410036319#5_0" pos="39.72" length="52.29" friendlyPos="1"/>
+        <access lane="970796648_0" pos="16.37" length="77.11" friendlyPos="1"/>
+        <access lane="970796649_0" pos="2.20" length="5.22" friendlyPos="1"/>
+    </busStop>
+    <busStop id="2749645996" name="CRECHE" lane="77873286#4_0" startPos="0.00" endPos="15.00" friendlyPos="true">
+        <access lane="-890025927#0_0" pos="12.41" length="143.84" friendlyPos="1"/>
+        <access lane="-890025929#1_0" pos="0.00" length="115.00" friendlyPos="1"/>
+        <access lane="307671386_0" pos="18.37" length="95.87" friendlyPos="1"/>
+        <access lane="890025927#0_0" pos="45.63" length="139.04" friendlyPos="1"/>
+        <access lane="890025929#1_0" pos="71.48" length="110.27" friendlyPos="1"/>
+    </busStop>
+    <busStop id="3901908533" lane="447326322#4_0" startPos="135.69" endPos="150.69" friendlyPos="true">
+        <access lane="-850495240_0" pos="18.92" length="52.04" friendlyPos="1"/>
+        <access lane="-850495242_0" pos="135.80" length="30.94" friendlyPos="1"/>
+        <access lane="1106471669_0" pos="0.00" length="41.11" friendlyPos="1"/>
+        <access lane="850495240_0" pos="0.00" length="55.00" friendlyPos="1"/>
+        <access lane="850495242_0" pos="0.00" length="31.16" friendlyPos="1"/>
+    </busStop>
+</additional>

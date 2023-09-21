@@ -1,0 +1,3 @@
+#!/bin/bash
+python "$SUMO_HOME/tools/ptlines2flows.py" -n osm.net.xml.gz -b 0 -e 3600 -p 600 --random-begin --seed 42 --ptstops osm_stops.add.xml --ptlines osm_ptlines.xml -o osm_pt.rou.xml --ignore-errors --vtype-prefix pt_ --stopinfos-file stopinfos.xml --routes-file vehroutes.xml --trips-file trips.trips.xml --min-stops 0 --extend-to-fringe --verbose
+python "$SUMO_HOME/tools/randomTrips.py" -n osm.net.xml.gz --fringe-factor 2 --insertion-density 50 -o osm.pedestrian.trips.xml -r osm.pedestrian.rou.xml -b 0 -e 3600 --vehicle-class pedestrian --prefix ped --persontrips --trip-attributes "modes=\"public\"" --additional-files osm_stops.add.xml,osm_pt.rou.xml --persontrip.walk-opposite-factor 0.8
